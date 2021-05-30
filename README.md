@@ -1,2 +1,2 @@
 # Alien Invasion
- Practice game porject
+ Practice game project
