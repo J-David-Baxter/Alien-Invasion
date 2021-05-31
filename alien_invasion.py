@@ -97,7 +97,9 @@ class AlienInvasion:
         elif event.key == pygame.K_SPACE:
             self._fire_bullet()
         elif event.key == pygame.K_p and not self.stats.game_active:
+            self.settings.initialize_dynamic_settings()
             self._play_game_actions()
+            
     
     def _check_keyup_events(self, event):
         # Respond to key releases
