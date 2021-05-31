@@ -70,6 +70,7 @@ class AlienInvasion:
            # Reset the game settings
            self.settings.initialize_dynamic_settings()
            self._play_game_actions()
+           self.sb.prep_score()
 
     
     def _play_game_actions(self):
@@ -101,6 +102,7 @@ class AlienInvasion:
         elif event.key == pygame.K_p and not self.stats.game_active:
             self.settings.initialize_dynamic_settings()
             self._play_game_actions()
+            self.sb.prep_score()
             
     
     def _check_keyup_events(self, event):
