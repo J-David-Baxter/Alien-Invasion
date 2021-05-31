@@ -72,6 +72,7 @@ class AlienInvasion:
            self._play_game_actions()
            self.sb.prep_score()
            self.sb.prep_level()
+           self.sb.prep_ships()
 
     
     def _play_game_actions(self):
@@ -105,6 +106,7 @@ class AlienInvasion:
             self._play_game_actions()
             self.sb.prep_score()
             self.sb.prep_level()
+            self.sb.prep_ships()
             
     
     def _check_keyup_events(self, event):
@@ -214,6 +216,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             # Decrement ships_left
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
 
             # Get rid of any remaining aliens and bullets
             self.aliens.empty()
