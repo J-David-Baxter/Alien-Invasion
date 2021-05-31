@@ -13,7 +13,8 @@ class AlienInvasion:
         """Initialize the game, and create game resources"""
         pygame.init()
         self.settings = Settings()
-
+        
+        # Uncomment line 18 for windowed mode, uncomment lines 19-21 for fullscreen
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         # self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         # self.settings.screen_width = self.screen.get_rect().width
